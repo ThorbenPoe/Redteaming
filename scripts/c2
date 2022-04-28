@@ -1,5 +1,5 @@
 Get-ADComputer -Filter * | Out-File C:\Temp\DomnainComp.txt
 Get-ADGroupmember -Identity "Domains Admins" | Out-File C:\Temp\DomnainA.txt
 net group "Enterprise Admins" /domain | Out-File C:\Temp\EntA.txt
-net user /(domain | Out-File C:\Temp\DomnainU.txt
+net user /domain | Out-File C:\Temp\DomnainU.txt
 net group /domain | Out-File C:\Temp\DomnainG.txt
